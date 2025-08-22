@@ -1,1 +1,100 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 350px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+}
+
+.nft-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nft-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nft-image:hover .overlay {
+  opacity: 1;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.description {
+  font-size: 1rem;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+}
+
+.time {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.creator img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
